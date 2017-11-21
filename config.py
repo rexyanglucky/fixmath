@@ -11,6 +11,7 @@ import web
 FIX_MATH_CONFIG = web.storage(
     name="fixMath",
     url="https://www.fixmath.com",
+    keywords="ajorm.com,zh-cn.vip,fixmath.com,luyuhai.com",
     description="将部分复杂的数学原理转化为计算机方面的应用",
     port=int(web.os.getenv('PORT') or 8080),
     author="Mr.Lu",

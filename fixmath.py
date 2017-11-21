@@ -5,9 +5,7 @@
 程序入口
 '''
 
-import web
-from config import URLS
-
+import config
 
 if __name__ == "__main__":
-    web.application(URLS, globals()).run(web.config.port)
+    config.web.application(config.URLS, globals()).run()
