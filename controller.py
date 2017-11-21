@@ -19,5 +19,5 @@ class Home(object):
         '''
         返回视图
         '''
-        parames = {"title" : "fixmath"}
+        parames = {"title" : "fixmath", "mathJax" : False}
         return RENDER.home(parames)
