@@ -21,6 +21,7 @@ class Home(object):
         返回视图
         '''
         parames = model.BasePara()
+        parames.title = "fixMath"
         parames.mathjax = False
         return RENDER.home(parames)
 
@@ -35,6 +36,7 @@ class TheFirstVolume(object):
         if url in ['', '/']:
             pass
         parames = model.BasePara()
+        parames.title = "the-first-volume"
         parames.keyword = "Calculus"
         parames.description = "研究的基本对象是定义在实数集上的函数"
         parames.currentmodule = fixmathproperty.CurrentPage().calculus
@@ -52,6 +54,7 @@ class TheLastVolume(object):
         if url in ['', '/']:
             pass
         parames = model.BasePara()
+        parames.title = "the-last-volume"
         parames.keyword = "Calculus"
         parames.description = "研究的基本对象是定义在实数集上的函数"
         parames.currentmodule = fixmathproperty.CurrentPage().calculus
@@ -69,6 +72,7 @@ class RealNumbers(object):
         if url in ['', '/']:
             pass
         parames = model.BasePara()
+        parames.title = "real-numbers-and-their-properties"
         parames.keyword = ""
         parames.description = "研究的基本对象是定义在实数集上的函数"
         parames.currentmodule = fixmathproperty.CurrentPage().calculus
@@ -86,6 +90,7 @@ class InequalityWith(object):
         if url in ['', '/']:
             pass
         parames = model.BasePara()
+        parames.title = "inequality-with-absolute-value"
         parames.keyword = ""
         parames.description = "从数轴上看，数 `a` 的绝对值 `|a|` 就是点 `a` 到原点的距离"
         parames.currentmodule = fixmathproperty.CurrentPage().calculus
