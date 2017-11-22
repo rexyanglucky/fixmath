@@ -16,10 +16,11 @@ FIX_MATH_CONFIG = web.storage(
     template_dir="template",                                        #模板位置
     home_url="/",                                                   #首页
     static_url="/static",                                           #静态文件位置
-    calculus_url="/zh-cn",                                          #微积分位置
+    calculus_url="/zh-cn/calculus/",                                #微积分位置
     favicon_url="/favicon.ico",                                     #fixmath图标位置
     init_day="2017/11/21",                                          #fixmath初始化day
     init_time="19:27:25",                                           #fixmath初始化time
+    locale="beijing china",                                         #fixmath地点
     cache=False,                                                    #fixmath缓存
     debug=True                                                      #fixmath调试
 )
@@ -32,6 +33,7 @@ web.template.Template.globals['config'] = FIX_MATH_CONFIG
 web.template.Template.globals['render'] = RENDER
 
 URLS = (
-    FIX_MATH_CONFIG.home_url, 'controller.Home',                        #首页
-    FIX_MATH_CONFIG.calculus_url, 'controller.Calculus'                 #微积分
+    FIX_MATH_CONFIG.home_url, 'controller.Home', #首页
+    FIX_MATH_CONFIG.calculus_url + 'the-first-volume(.*)', 'controller.TheFirstVolume', #微积分
+    FIX_MATH_CONFIG.calculus_url + 'the-last-volume(.*)', 'controller.TheLastVolume',
 )

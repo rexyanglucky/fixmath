@@ -22,13 +22,26 @@ class Home(object):
         parames = {"title" : "fixmath", "mathJax" : False}
         return RENDER.home(parames)
 
-class Calculus(object):
+class TheFirstVolume(object):
     '''
     微积分
     '''
-    def GET(self):
+    def GET(self, url):
         '''
         返回视图
         '''
         parames = {"title" : "", "mathJax" : False}
-        return RENDER.the_first_volume(parames)
+        return RENDER.modules.calculus.the_first_volume(parames)
+
+class TheLastVolume(object):
+    '''
+    下集
+    '''
+    def GET(self, url):
+        '''
+        返回视图
+        '''
+        if url in ['', '/']:
+            pass
+        parames = {"title" : "", "mathJax" : False}
+        return RENDER.modules.calculus.the_last_volume(parames)
