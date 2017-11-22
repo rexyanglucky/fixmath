@@ -1,4 +1,5 @@
-$def with (title)
+$def with (parames)
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,15 @@ $def with (title)
     <meta name="keywords" content="$config.keywords">
     <meta name="author" content="$config.author">
     <link rel="icon" href="$config.favicon_url">
-    <title>$:title</title>
+    <title>$:parames.title</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="$config.static_url/css/dashboard.css" rel="stylesheet" />
     <link href="$config.static_url/css/docs.css" rel="stylesheet" />
-    <script src="https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML"></script>
-
+    $if parames.mathjax:
+        <script src="https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML"></script>
+    
+        
     <style >
     .bs-docs-masthead, .bs-docs-header{
     background-image: linear-gradient(to bottom, rgba(152, 71, 71, 0.69) 0%,rgba(42, 16, 76, 0.72) 100%);

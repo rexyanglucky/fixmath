@@ -5,10 +5,11 @@
 '''
 
 import config
-
+import model
 
 RENDER = config.RENDER
 CONFIG = config.FIX_MATH_CONFIG
+
 
 
 class Home(object):
@@ -19,7 +20,8 @@ class Home(object):
         '''
         返回视图
         '''
-        parames = {"title" : "fixmath", "mathJax" : False}
+        parames = model.BasePara()
+        parames.mathjax = False
         return RENDER.home(parames)
 
 class TheFirstVolume(object):
@@ -30,7 +32,10 @@ class TheFirstVolume(object):
         '''
         返回视图
         '''
-        parames = {"title" : "", "mathJax" : False}
+        if url in ['', '/']:
+            pass
+        parames = model.BasePara()
+        parames.highlight = "calculus"
         return RENDER.modules.calculus.the_first_volume(parames)
 
 class TheLastVolume(object):
@@ -43,5 +48,6 @@ class TheLastVolume(object):
         '''
         if url in ['', '/']:
             pass
-        parames = {"title" : "", "mathJax" : False}
+        parames = model.BasePara()
+        parames.highlight = "calculus"
         return RENDER.modules.calculus.the_last_volume(parames)

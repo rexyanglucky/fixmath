@@ -1,4 +1,22 @@
 $def with (parames)
+<!DOCTYPE html>
+<html lang="zh-cn">
 
-abc
+  $:render.layout.header(parames)
 
+<body>
+
+  $:render.layout.navbar(parames)
+
+  
+  
+  <div class="navbar-fixed-bottom">
+      
+    $:render.layout.footer()
+
+    $:render.layout.copyright()
+
+  </div>
+
+</body>
+</html>

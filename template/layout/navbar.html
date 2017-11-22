@@ -1,3 +1,5 @@
+$def with (parames)
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -15,7 +17,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse" role="navigation">
             <ul class="nav navbar-nav navbar-right">
-              <li>
+              <li $:('class="active"' if parames.highlight=="calculus" else "")>
                 <a href="/zh-cn/calculus/the-first-volume">微积分</a>
               </li>
               <li><a href="/zh-cn/algebra/index">代数</a></li>
