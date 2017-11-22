@@ -1,0 +1,700 @@
+$def with (parames)
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+$:render.layout.header(parames)
+
+<body>
+
+    $:render.layout.navbar(parames)
+    
+    $:render.layout.banner(parames)
+
+    <div class="container bs-docs-container">
+        <div class="row">
+            <div class="col-md-12" role="main">
+                <div class="bs-docs-section">
+
+                    <div class="bs-callout bs-callout-warning">
+                        <h3 class="page-header c">第一章&emsp;&emsp;多项式</h3>
+                        <p class="lead d">
+                            Chapter 1&emsp;&nbsp;polynomial
+                        </p>
+                        <p class="lead">
+                            历史上，数的概念是由自然数、整数、有理数、实数到复数；关于数的加、减、乘、除等运算的性质常称为数的
+                            <b>代数性质</b>；
+                        </p>
+                    </div>
+                    <div id="a1" class="bs-example bs-example-type">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;
+                                            <a href="/zh-cn/algebra/number-field">数域</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="/zh-cn/algebra/number-field">number field</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;
+                                            <a href="/zh-cn/algebra/polynomial-of-a-variable">一元多项式</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="/zh-cn/algebra/polynomial-of-a-variable">polynomial of a variable</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;
+                                            <a href="/zh-cn/algebra/the-concept-of-divisible">整数的概念</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="/zh-cn/algebra/the-concept-of-divisible">the concept of divisible</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;
+                                            <a href="/zh-cn/algebra/greatest-common-factor">最大公因式</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="/zh-cn/algebra/greatest-common-factor">greatest common factor</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§5&emsp;
+                                            <a href="/zh-cn/algebra/factorization-theorem">因式分解定理</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="/zh-cn/algebra/factorization-theorem">factorization theorem</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§6&emsp;
+                                            <a href="/zh-cn/algebra/repeating-factor">重因式</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="/zh-cn/algebra/repeating-factor">repeating factor</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§7&emsp;
+                                            <a href="/zh-cn/algebra/polynomial-function">多项式函数</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="/zh-cn/algebra/polynomial-function">polynomial function</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§8&emsp;
+                                            <a href="/zh-cn/algebra/factorization-of-polynomials-with-complex-coefficients-and-real-coefficients">复系数与实系数多项式的因式分解</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="/zh-cn/algebra/factorization-of-polynomials-with-complex-coefficients-and-real-coefficients">factorization of polynomials with complex coefficients and real coefficients</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§9&emsp;
+                                            <a href="/zh-cn/algebra/polynomial-with-rational-coefficients">有理系数多项式</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="/zh-cn/algebra/polynomial-with-rational-coefficients">polynomial with rational coefficients</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§10&emsp;
+                                            <a href="/zh-cn/algebra/multivariate-polynomial">多元多项式</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="/zh-cn/algebra/multivariate-polynomial">multivariate polynomial</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§11&emsp;
+                                            <a href="/zh-cn/algebra/symmetric-polynomial">对称多项式</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="/zh-cn/algebra/symmetric-polynomial">symmetric polynomial</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div id="a2" class="bs-callout bs-callout-warning">
+                        <h3>第二章&emsp;&emsp;行列式</h3>
+                    </div>
+                    <div class="bs-example bs-example-type">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;引言</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;排列</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;`n` 级行列式</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;`n` 级行列式的性质</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§5&emsp;行列式的计算</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§6&emsp;行列式按一行（列）展开</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§7&emsp;克拉默（Cramer）法则</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§8&emsp;拉普位斯（Laplace）定理`*`行列式的乘法规则</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-warning">
+                        <h3>第三章&emsp;&emsp;线性方程组</h3>
+                    </div>
+                    <div class="bs-example bs-example-type">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;消元法</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;`n` 维向量空间</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;线性相关性</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;矩阵的秩</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§5&emsp;线性方程组有解判别定理</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§6&emsp;线性方程组解的结构</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§7&emsp;二元高次方程组</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-warning">
+                        <h3>第四章&emsp;&emsp;矩阵</h3>
+                    </div>
+                    <div class="bs-example bs-example-type">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;矩阵概念的一些背景</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;矩阵的运算</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;矩阵乘积的行列式与秩</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;矩阵的逆</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§5&emsp;矩阵的分块</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§6&emsp;初等矩阵</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§7&emsp;分块乘法的初等变换及应用举例</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-warning">
+                        <h3>第五章&emsp;&emsp;二次型</h3>
+                    </div>
+                    <div class="bs-example bs-example-type">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;二次型及其矩阵表示</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;标准形</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;唯一性</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;正定二次型</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-warning">
+                        <h3>第六章&emsp;&emsp;线性空间</h3>
+                    </div>
+                    <div class="bs-example bs-example-type">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;集合`*`映射</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;线性空间的定义与简单性质</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;维数`*`基与坐标</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;基变换与坐标变换</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§5&emsp;线性子空间</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§6&emsp;子空间的交与和</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§7&emsp;子空间的直和</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§8&emsp;线性空间的同构</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-warning">
+                        <h3>第七章&emsp;&emsp;线性变换</h3>
+                    </div>
+                    <div class="bs-example bs-example-type">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;线性变换的定义</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;线性变换的运算</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;线性变换的矩阵</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;特征值与特征向量</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§5&emsp;对角矩阵</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§6&emsp;线性变换的值域与核</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§7&emsp;不变子空间</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§8&emsp;若尔当（Jordan）标准形介绍</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§9&emsp;最不多项式</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-warning">
+                        <h3>第八章&emsp;&emsp;`lambda`-矩阵</h3>
+                    </div>
+                    <div class="bs-example bs-example-type">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;`lambda`矩阵</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;`lambda`矩阵在初等变换下的标准形</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;不变因子</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;矩阵相似的条件</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§5&emsp;初等因子</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§6&emsp;若尔当（Jordan）标准形的理论推导</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§7&emsp;矩阵的有理标准形</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-warning">
+                        <h3>第九章&emsp;&emsp;欧几里德空间</h3>
+                    </div>
+                    <div class="bs-example bs-example-type">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;定义与基本性质</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;标准正交基</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;同构</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;正交变换</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§5&emsp;子空间</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§6&emsp;实对称矩阵的标准形</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§7&emsp;向量到子空间的距离`*`最小二乘法</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§8&emsp;酉空间介绍</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-warning">
+                        <h3>第十章&emsp;&emsp;双线性函数与辛空间</h3>
+                    </div>
+                    <div class="bs-example bs-example-type">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;线性函数</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;对偶空间</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;双线性函数</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;辛空间</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-warning">
+                        <h3>附录</h3>
+                    </div>
+                    <div class="bs-example bs-example-type">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;关于连加号 "`Sigma`"</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;整数和可除性理论</td>
+                                    <td class="text-right">
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-danger">
+                        <h3>End</h3>
+                        <p>
+                            Create By Mr.Lu 2017-5-17 23:23
+                        </p>
+                    </div>
+                    <nav aria-label="...">
+                        <ul class="pager">
+                            <li>
+                                <a href="/zh-cn/calculus/the-last-volume">Previous</a>
+                            </li>
+                            <li>
+                                <a href="/zh-cn/geometry/index">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    $:render.layout.footer()
+
+    $:render.layout.copyright()
+
+</body>
+
+</html>

@@ -111,3 +111,52 @@ class CurrentStyleName(object):
         从数轴上看，数 `a` 的绝对值 `|a|` 就是点 `a` 到原点的距离
         '''
         return 4
+
+    @property
+    def algebra(self):
+        '''
+        代数
+        '''
+        return 5
+
+    @property
+    def geometry(self):
+        '''
+        几何
+        '''
+        return 6
+
+    @property
+    def game(self):
+        '''
+        游戏
+        '''
+        return 7
+
+    @property
+    def svg(self):
+        '''
+        svg
+        '''
+        return 8
+
+    @property
+    def wiki(self):
+        '''
+        wiki
+        '''
+        return 9
+
+    @property
+    def profile(self):
+        '''
+        用户中心
+        '''
+        return 10
+
+    @property
+    def source(self):
+        '''
+        源
+        '''
+        return 11

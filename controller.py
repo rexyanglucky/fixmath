@@ -96,3 +96,129 @@ class InequalityWith(object):
         parames.currentmodule = fixmathproperty.CurrentPage().calculus
         parames.bannerstylename = fixmathproperty.CurrentStyleName().inequality_with
         return RENDER.modules.calculus.inequality_with(parames)
+
+class AlgebraIndex(object):
+    '''
+    研究线性空间（向量空间）、模和其上的线性变换以及与之有关的问题
+    '''
+    def GET(self, url):
+        '''
+        返回视图
+        '''
+        if url in ['', '/']:
+            pass
+        parames = model.BasePara()
+        parames.title = "algebra"
+        parames.keyword = "Algebra"
+        parames.description = "研究线性空间（向量空间）、模和其上的线性变换以及与之有关的问题"
+        parames.currentmodule = fixmathproperty.CurrentPage().algebra
+        parames.bannerstylename = fixmathproperty.CurrentStyleName().algebra
+        return RENDER.modules.algebra.index(parames)
+
+class GeometryIndex(object):
+    '''
+    借助于解析式进行图形研究的几何学，定义图形的概念与参数
+    '''
+    def GET(self, url):
+        '''
+        返回视图
+        '''
+        if url in ['', '/']:
+            pass
+        parames = model.BasePara()
+        parames.title = "Analytic Geometry"
+        parames.keyword = "Analytic Geometry"
+        parames.description = "借助于解析式进行图形研究的几何学，定义图形的概念与参数"
+        parames.currentmodule = fixmathproperty.CurrentPage().geometry
+        parames.bannerstylename = fixmathproperty.CurrentStyleName().geometry
+        return RENDER.modules.geometry.index(parames)
+
+class SourceIndex(object):
+    '''
+    AsciiMath
+    '''
+    def GET(self, url):
+        '''
+        返回视图
+        '''
+        if url in ['', '/']:
+            pass
+        parames = model.BasePara()
+        parames.title = "AsciiMath"
+        parames.keyword = ""
+        parames.description = ""
+        parames.currentmodule = fixmathproperty.CurrentPage().source
+        parames.bannerstylename = fixmathproperty.CurrentStyleName().source
+        return RENDER.modules.source.index(parames)
+
+class GameIndex(object):
+    '''
+    Game
+    '''
+    def GET(self, url):
+        '''
+        返回视图
+        '''
+        if url in ['', '/']:
+            pass
+        parames = model.BasePara()
+        parames.title = "Game"
+        parames.keyword = ""
+        parames.description = ""
+        parames.currentmodule = fixmathproperty.CurrentPage().game
+        parames.bannerstylename = fixmathproperty.CurrentStyleName().game
+        return RENDER.modules.game.index(parames)
+
+class SvgIndex(object):
+    '''
+    SVG
+    '''
+    def GET(self, url):
+        '''
+        返回视图
+        '''
+        if url in ['', '/']:
+            pass
+        parames = model.BasePara()
+        parames.title = "SVG"
+        parames.keyword = ""
+        parames.description = ""
+        parames.currentmodule = fixmathproperty.CurrentPage().svg
+        parames.bannerstylename = fixmathproperty.CurrentStyleName().svg
+        return RENDER.modules.svg.index(parames)
+
+class WikiIndex(object):
+    '''
+    WIKI
+    '''
+    def GET(self, url):
+        '''
+        返回视图
+        '''
+        if url in ['', '/']:
+            pass
+        parames = model.BasePara()
+        parames.title = "WIKI"
+        parames.keyword = ""
+        parames.description = ""
+        parames.currentmodule = fixmathproperty.CurrentPage().wiki
+        parames.bannerstylename = fixmathproperty.CurrentStyleName().wiki
+        return RENDER.modules.wiki.index(parames)
+
+class ProfileIndex(object):
+    '''
+    用户中心
+    '''
+    def GET(self, url):
+        '''
+        返回视图
+        '''
+        if url in ['', '/']:
+            pass
+        parames = model.BasePara()
+        parames.title = "用户中心"
+        parames.keyword = ""
+        parames.description = "用户中心"
+        parames.currentmodule = fixmathproperty.CurrentPage().profile
+        parames.bannerstylename = fixmathproperty.CurrentStyleName().profile
+        return RENDER.modules.profile.index(parames)
