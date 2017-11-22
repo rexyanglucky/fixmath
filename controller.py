@@ -36,6 +36,8 @@ class TheFirstVolume(object):
         if url in ['', '/']:
             pass
         parames = model.BasePara()
+        parames.keyword = "Calculus"
+        parames.description = "研究的基本对象是定义在实数集上的函数"
         parames.currentmodule = fixmathproperty.CurrentPage().calculus
         parames.bannerstylename = fixmathproperty.CurrentStyleName().the_first_volume
         return RENDER.modules.calculus.the_first_volume(parames)
@@ -51,6 +53,8 @@ class TheLastVolume(object):
         if url in ['', '/']:
             pass
         parames = model.BasePara()
+        parames.keyword = "Calculus"
+        parames.description = "研究的基本对象是定义在实数集上的函数"
         parames.currentmodule = fixmathproperty.CurrentPage().calculus
         parames.bannerstylename = fixmathproperty.CurrentStyleName().the_last_volume
         return RENDER.modules.calculus.the_last_volume(parames)
