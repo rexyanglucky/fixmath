@@ -6,6 +6,7 @@
 
 import web
 import fixmathproperty
+from datetime import datetime
 
 FIX_MATH_CONFIG = web.storage(
     name="fixMath",                                                 #fixmath名称
@@ -21,6 +22,7 @@ FIX_MATH_CONFIG = web.storage(
     favicon_url="/favicon.ico",                                     #fixmath图标位置
     init_day="2017/11/21",                                          #fixmath初始化day
     init_time="19:27:25",                                           #fixmath初始化time
+    local_datetime=datetime.now(),                                  #当前时间
     locale="beijing china",                                         #fixmath地点
     cache=False,                                                    #fixmath缓存
     debug=True,                                                     #fixmath调试
