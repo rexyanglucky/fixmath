@@ -17,16 +17,23 @@ $def with (parames)
         </div>
         <div id="navbar" class="navbar-collapse collapse" role="navigation">
             <ul class="nav navbar-nav navbar-right">
-              <li $:('class="active"' if parames.highlight=="calculus" else "")>
+              <li $:('class="active"' if parames.currentmodule==config.currentmodule.calculus else "")>
                 <a href="/zh-cn/calculus/the-first-volume">微积分</a>
               </li>
-              <li><a href="/zh-cn/algebra/index">代数</a></li>
-              <li><a href="/zh-cn/geometry/index">几何</a></li>
-              <li><a href="/zh-cn/following-about-fixmath">源</a></li>
-              <li><a href="/zh-cn/game/index">Game</a></li>
-              <li><a href="/zh-cn/svg/index">SVG</a></li>
-              <li><a href="/zh-cn/wiki/index">索引</a></li>
-              <li><a href=""><span class="glyphicon glyphicon-user"></span></a>                  
+              <li $:('class="active"' if parames.currentmodule==config.currentmodule.algebra else "")>
+                  <a href="/zh-cn/algebra/index">代数</a></li>
+              <li $:('class="active"' if parames.currentmodule==config.currentmodule.geometry else "")>
+                  <a href="/zh-cn/geometry/index">几何</a></li>
+              <li $:('class="active"' if parames.currentmodule==config.currentmodule.source else "")>
+                  <a href="/zh-cn/following-about-fixmath">源</a></li>
+              <li $:('class="active"' if parames.currentmodule==config.currentmodule.game else "")>
+                  <a href="/zh-cn/game/index">Game</a></li>
+              <li $:('class="active"' if parames.currentmodule==config.currentmodule.svg else "")>
+                  <a href="/zh-cn/svg/index">SVG</a></li>
+              <li $:('class="active"' if parames.currentmodule==config.currentmodule.wiki else "")>
+                  <a href="/zh-cn/wiki/index">索引</a></li>
+              <li $:('class="active"' if parames.currentmodule==config.currentmodule.profile else "")>
+                  <a href=""><span class="glyphicon glyphicon-user"></span></a>                  
               </li>
             </ul>
         </div>

@@ -5,17 +5,14 @@
 实体类
 '''
 
-import config
-
-
-CONFIG = config.FIX_MATH_CONFIG
-
+import fixmathproperty
 
 class BasePara(object):
     '''
-    参数类
+    页面的公共参数类
     '''
-    title = CONFIG.description
-    mathjax = True
-    highlight = ""
-    
+
+    title = "fixmath"                                             #页面的title
+    mathjax = True                                                #是否数学公式加载
+    currentmodule = fixmathproperty.CurrentPage().home            #高亮显示字符串
+    bannerstylename = fixmathproperty.CurrentStyleName().home     #页面样式banner名称

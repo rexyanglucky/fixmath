@@ -5,6 +5,7 @@
 '''
 
 import web
+import fixmathproperty
 
 FIX_MATH_CONFIG = web.storage(
     name="fixMath",                                                 #fixmath名称
@@ -22,7 +23,9 @@ FIX_MATH_CONFIG = web.storage(
     init_time="19:27:25",                                           #fixmath初始化time
     locale="beijing china",                                         #fixmath地点
     cache=False,                                                    #fixmath缓存
-    debug=True                                                      #fixmath调试
+    debug=True,                                                     #fixmath调试
+    bannerstylename=fixmathproperty.CurrentStyleName(),             #fixmath每个页面的banner
+    currentmodule=fixmathproperty.CurrentPage()                     #当前模块
 )
 
 web.config.port = FIX_MATH_CONFIG.port

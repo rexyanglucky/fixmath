@@ -5,6 +5,7 @@
 '''
 
 import config
+import fixmathproperty
 import model
 
 RENDER = config.RENDER
@@ -35,7 +36,8 @@ class TheFirstVolume(object):
         if url in ['', '/']:
             pass
         parames = model.BasePara()
-        parames.highlight = "calculus"
+        parames.currentmodule = fixmathproperty.CurrentPage().calculus
+        parames.bannerstylename = fixmathproperty.CurrentStyleName().the_first_volume
         return RENDER.modules.calculus.the_first_volume(parames)
 
 class TheLastVolume(object):
@@ -49,5 +51,6 @@ class TheLastVolume(object):
         if url in ['', '/']:
             pass
         parames = model.BasePara()
-        parames.highlight = "calculus"
+        parames.currentmodule = fixmathproperty.CurrentPage().calculus
+        parames.bannerstylename = fixmathproperty.CurrentStyleName().the_last_volume
         return RENDER.modules.calculus.the_last_volume(parames)
