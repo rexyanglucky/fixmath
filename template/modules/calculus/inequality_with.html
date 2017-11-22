@@ -1,0 +1,70 @@
+$def with (parames)
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+$:render.layout.header(parames)
+
+<body>
+
+
+    $:render.layout.navbar(parames)
+    
+    $:render.layout.banner(parames)
+
+
+    <div class="container bs-docs-container">
+        <div class="row">
+
+            $:render.layout.calculus_left(parames, 2)
+
+            <div class="col-md-9" role="main">
+                <div class="bs-docs-section">
+                    <ol class="breadcrumb doc-fontsize">
+                        <li>
+                            <a href="#">实数集与函数</a>
+                        </li>
+                        <li>
+                            <a href="#">实数</a>
+                        </li>
+                        <li class="active">绝对值与不等式</li>
+                    </ol>
+                    <h3 id="whats-included">定义</h3>
+                    <p class="lead">实数 `a` 的绝对值定义为</p>
+                    <div class="bs-callout bs-callout-info">
+                        <p class="lead text-center">
+                            `|a|={(a,a>=0),(-a,a
+                            <0):}` </p>
+                    </div>
+
+                </div>
+
+                <div class="bs-callout bs-callout-danger">
+                    <h3>End</h3>
+                    <p>
+                        Create By Mr.Lu 2017-5-12 9:14
+                    </p>
+                </div>
+
+                <nav aria-label="...">
+                    <ul class="pager">
+                        <li>
+                            <a href="/zh-cn/calculus/real-numbers-and-their-properties">Previous</a>
+                        </li>
+                        <li>
+                            <a href="/">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+    $:render.layout.footer()
+    
+    $:render.layout.copyright()
+
+</body>
+
+</html>

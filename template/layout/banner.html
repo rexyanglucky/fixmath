@@ -3,8 +3,9 @@ $def with (parames)
 
 <div class="bs-docs-header">
     <div class="container">
-        <h1>$:parames.keyword</h1>
-        <p>$:parames.description</p>
+        $if not parames.keyword in ['']:
+            <h1>$:parames.keyword</h1>
+        $if not parames.description in ['']:
+            <p>$:parames.description</p>
     </div>
 </div>
-

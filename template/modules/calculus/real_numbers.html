@@ -1,0 +1,230 @@
+$def with (parames)
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+$:render.layout.header(parames)
+
+<body>
+
+    $:render.layout.navbar(parames)
+    
+    $:render.layout.banner(parames)
+
+    <div class="container bs-docs-container">
+        <div class="row">
+
+            $:render.layout.calculus_left(parames, 1)
+
+            <div class="col-md-9" role="main">
+                <div class="bs-docs-section">
+                    <ol class="breadcrumb doc-fontsize">
+                        <li>
+                            <a href="#">实数集与函数</a>
+                        </li>
+                        <li>
+                            <a href="#">实数</a>
+                        </li>
+                        <li class="active">实数及其性质</li>
+                    </ol>
+                    <h3 id="whats-included">
+                        <a class="anchorjs-link " href="#whats-included" aria-label="Anchor link for: whats included" data-anchorjs-icon=""
+                            style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>概览</h3>
+                    <p class="lead">数学分析研究的基本对象是定义在实数集上的函数。</p>
+
+
+                    <div class="bs-callout bs-callout-info" id="callout-navbar-breakpoint">
+                        <h3>实数由有理数与无理数两部分组成</h3>
+                        <p class="lead">
+                            有理数可用分数形式`\frac{p}{q}`(`p`、`q`为整数，`q\ne0`) 表示，也可用有限十进制小数或无限十进循环小数表示；而无限十进不循环小数则称为无理数。
+                        </p>
+                    </div>
+                    <p class="lead">有理数和无理数统称为实数。</p>
+                    <p class="lead">为了讨论的需要，我们把有限小数（包括整数）也表示为无限小数；对此我们作如下规定：</p>
+
+                    <div class="bs-callout bs-callout-info">
+                        <h3>对于正有限小数（包括正整数）`x`</h3>
+                        <p class="lead">
+                            当`x=a_0.a_1a_2\cdotsa_n`时，其中`0\lea_i\le9,i=1,2,\cdots,n`,`a_n\ne0,a_0`为非负整数，记
+                        </p>
+                        <p class="lead text-center">
+                            `x=a_0.a_1a_2\cdots(a_n-1)999`&ensp;`9\cdots`，
+                        </p>
+                        <p class="lead">
+                            而当`x=a_0`为正整数时，则记
+                        </p>
+                        <p class="lead text-center">
+                            `x=(a_0-1).999`&ensp;`9\cdots`，
+                        </p>
+                        <p class="lead">
+                            例如`2.001`记为`2.000`&ensp;`999`&ensp;`9\cdots`；对于负有限小数（包括负整数）`y`，则先将`-y`表示为无限小数，再在所得无限小数之前加负号，例如`-8`记为`-7.999`&ensp;`9\cdots`；又规定数`0`表示为`0.000`&ensp;`0\cdots`；
+                        </p>
+
+
+                    </div>
+                    <p class="lead">于是，任何实数都可用一个确定的无限小数来表示；</p>
+                    <p class="lead">现定义两个实数的大小关系；</p>
+
+                    <div class="bs-callout bs-callout-info">
+                        <h3>定义1 给定两个非负实数</h3>
+                        <p class="lead text-center">
+                            `x=a_0.a_1a_2\cdotsa_n\cdots`，`y=b_0.b_1b_2\cdotsb_n\cdots`，
+                        </p>
+                        <p class="lead">
+                            其中`a_0`,`b_0`为非负整数，`a_k`，`b_k(k=1,2,\cdots)`为整数，`0\lea_k\le9`，`0\leb_k\le9`；若有
+                        </p>
+                        <p class="lead text-center">
+                            `a_k=b_k`，`k=0,1,2,\cdots`，
+                        </p>
+                        <p class="lead">
+                            则称`x`与`y`相等，记为`x=y`；若`a_0\gtb_0`或存在非负整数`l`，使得
+                        </p>
+                        <p class="lead text-center">
+                            `a_k=b_k(k=0,1,2,\cdots,l)`而`a_{l+1}\gtb_{l+1}`，
+                        </p>
+                        <p class="lead">
+                            则称`x`大于`y`或`y`小于`x`，分别记为`x\gty`或`y\ltx`；
+                        </p>
+                        <p class="lead">
+                            对于负实数`x`，`y`，若按上述规定分别有`-x=-y`与`-x\gt-y`，则分别称`x=y`与`x\lty`(或`y\gtx`)；另外，自然规定任何非负实数大于任何负实数；
+                        </p>
+                    </div>
+                    <p class="lead">
+                        <!--&emsp;&emsp;-->以下给出通过有限小数来比较两个实数大小的等价条件；为此，先给出如下定义：
+                    </p>
+                    <div class="bs-callout bs-callout-info">
+                        <h3>定义2 设`x=a_0.a_1a_2\cdotsa_n\cdots`为非负实数，称有理数</h3>
+                        <p class="lead text-center">
+                            `x_n=a_0.a_1a_2\cdotsa_n`
+                        </p>
+                        <p class="lead">
+                            为实数`x`的`n`位不足近似，而有理数
+                        </p>
+                        <p class="lead text-center">
+                            `\overline{x_n}=a_n+\frac{1}{10^n}`
+                        </p>
+                        <p class="lead">
+                            称为`x`的`n`位过剩近似，`n=0,1,2,\cdots`；
+                        </p>
+                        <p class="lead">
+                            对于负实数`x=-a_0.a_1a_2\cdotsa_n\cdots`，其`n`位不足近似与过剩近似分别规定为
+                        </p>
+                        <p class="lead text-center">
+                            `x_n=-a_0.a_1a_2\cdotsa_n-\frac{1}{10^n}`与`\overline{x_n}=-a_0.a_1a_2\cdotsa_n`；
+                        </p>
+
+                    </div>
+                    <div class="bs-callout bs-callout-danger">
+                        <h3>注</h3>
+                        <p class="lead">
+                            不难看出，实数`x`的不足近似`x_n`当`n`增大时不减，即有 `x_0\lex_1\lex_2\le\cdots`,而过剩近似`\overline(x_n)`当 `n`增大时不增，即有`\overline(x_0)\ge\overline(x_1)\ge\overline(x_2)\ge\cdots`；
+                        </p>
+                    </div>
+                    <div class="bs-callout bs-callout-warning">
+                        <h3>命题</h3>
+                        <p class="lead">
+                            设`x=a_0.a_1a_2\cdots`与`y=b_0.b_1b_2\cdots`为两个实数，则`x\gty`的等价条件是：存在非负整数`n`，使得
+                        </p>
+                        <p class="lead text-center">
+                            `x_n\gt\overline(y_n)`
+                        </p>
+                        <p class="lead">
+                            其中`x_n`表示`x`的`n`位不足近似，`\overline(y_n)`表示`y`的`n`位过剩近似；
+                        </p>
+                    </div>
+                    <div class="bs-callout bs-callout-info">
+                        <h3>例1</h3>
+                        <p class="lead">
+                            设`x`、`y`为实数，`x\lty`；证明：存在有理数`r`满足
+                        </p>
+                        <p class="lead text-center">
+                            `x\ltr\lty`
+                        </p>
+                        <p class="lead">
+                            证&emsp;由于`x\lty`，故存在非负整数`n`，使得`\overline(x_n)\lty_n`；令
+                        </p>
+                        <p class="lead text-center">
+                            `r=\frac{1}{2}(\overline(x_n)+y_n)`，
+                        </p>
+                        <p class="lead">
+                            则`r`为有理数，且有
+                        </p>
+                        <p class="lead text-center">
+                            `x\le\overline(x_n)\ltr\lty_n\ley`，
+                        </p>
+                        <p class="lead">
+                            即得`x\ltr\lty`；
+                        </p>
+                    </div>
+
+                    <div class="bs-callout bs-callout-warning">
+
+                        <h3>
+                            为方便起见，通常将全体实数构成的集合记为`R`，即
+                        </h3>
+                        <p class="lead text-center">
+                            `R={x|x`为实数`}`
+                        </p>
+                        <p class="lead">
+                            实数有如下一些主要性质：
+                        </p>
+                        <p class="lead">
+                            1、实数集`R`对加、减、乘、除（除数不能为`0`）四则运算是封装的，即任意两个实数的和、差、积、商（除数不为`0`）仍然是实数；
+                        </p>
+                        <p class="lead">
+                            2、实数集是有序的，即任意两实数`a`，`b`必满足下述三个关系之一：`a\ltb`，`a=b`，`a\gtb`；
+                        </p>
+                        <p class="lead">
+                            3、实数的大小关系上具有传递性，即若`a\gtb`，`b\gtc`，则有`a\gtc`；
+                        </p>
+                        <p class="lead">
+                            4、实数具有阿基米德（Archimedes）性，即对任何`a`，`b\inR`，若`b\gta\gt0`，则存在正整数`n`，使得`na\gtb`；
+                        </p>
+                        <p class="lead">
+                            5、实数集`R`具有稠密性，即任何两个不相等的实数之间必有另一个实数，且即有有理数（见例1），也有无理数；
+                        </p>
+                        <p class="lead">
+                            6、如果在一直线（通常画成水平直线）上确定一点O作为原点，指定一个方向为正向（通常把指向右方的方向规定为正向），并规定一个单位长度，则称此直线为数轴；任一实数都对应数轴上唯一的一点；反之，数轴上的每一点也都唯一地代表一个实数；于是，实数集`R`与数轴上的点有着一一对应关系；在本书以后的叙述中，常把“实数`a`”与“数轴上的点`a`”这两种说法看作具有相同的含义；
+                        </p>
+
+                    </div>
+
+                    <div class="bs-callout bs-callout-info">
+                        <h3>例2</h3>
+                        <p class="lead">
+                            设`a`、`b\inR`，证明：若对任何正数`\varepsilon`有`a\ltb+\varepsilon`，则`aleb`；
+                        </p>
+                        <p class="lead">
+                            证&emsp;用反证法；倘若结论不成立，则根据实数集的有序性，有`a\gtb`；令`\varepsilon=a-b`，则`\varepsilon`为正数且`a=b+\varepsilon`，但这与假设`a\ltb+\varepsilon`相矛盾；从而必有`a\leb`；
+                        </p>
+                    </div>
+
+                    <div class="bs-callout bs-callout-danger">
+                        <h3>End</h3>
+                        <p>
+                            Create By Mr.Lu 2017-5-11 18:36
+                        </p>
+                    </div>
+
+                    <nav aria-label="...">
+                        <ul class="pager">
+                            <li>
+                                <a href="/zh-cn/calculus/real-numbers-and-their-properties">Previous</a>
+                            </li>
+                            <li>
+                                <a href="/zh-cn/calculus/inequality-with-absolute-value">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    $:render.layout.footer()
+    
+    $:render.layout.copyright()
+
+</body>
+
+</html>

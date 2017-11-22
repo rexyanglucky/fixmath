@@ -97,3 +97,17 @@ class CurrentStyleName(object):
          下集
         '''
         return 2
+
+    @property
+    def real_numbers(self):
+        '''
+        研究的基本对象是定义在实数集上的函数
+        '''
+        return 3
+
+    @property
+    def inequality_with(self):
+        '''
+        从数轴上看，数 `a` 的绝对值 `|a|` 就是点 `a` 到原点的距离
+        '''
+        return 4

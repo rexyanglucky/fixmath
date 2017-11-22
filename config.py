@@ -4,9 +4,10 @@
 系统的全局配置参数与URL
 '''
 
+from datetime import datetime
 import web
 import fixmathproperty
-from datetime import datetime
+
 
 FIX_MATH_CONFIG = web.storage(
     name="fixMath",                                                 #fixmath名称
@@ -37,10 +38,10 @@ RENDER = web.template.render(FIX_MATH_CONFIG.template_dir, cache=FIX_MATH_CONFIG
 web.template.Template.globals['config'] = FIX_MATH_CONFIG
 web.template.Template.globals['render'] = RENDER
 
-
-
 URLS = (
     FIX_MATH_CONFIG.home_url, 'controller.Home', #首页
     FIX_MATH_CONFIG.calculus_url + 'the-first-volume(.*)', 'controller.TheFirstVolume', #微积分
     FIX_MATH_CONFIG.calculus_url + 'the-last-volume(.*)', 'controller.TheLastVolume',
+    FIX_MATH_CONFIG.calculus_url + 'real-numbers-and-their-properties(.*)', 'controller.RealNumbers',
+    FIX_MATH_CONFIG.calculus_url + 'inequality-with-absolute-value(.*)', 'controller.InequalityWith',
 )
