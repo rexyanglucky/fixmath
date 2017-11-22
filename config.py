@@ -32,5 +32,6 @@ web.template.Template.globals['config'] = FIX_MATH_CONFIG
 web.template.Template.globals['render'] = RENDER
 
 URLS = (
-    FIX_MATH_CONFIG.home_url, 'controller.Home'
+    FIX_MATH_CONFIG.home_url, 'controller.Home',                        #首页
+    FIX_MATH_CONFIG.calculus_url, 'controller.Calculus'                 #微积分
 )

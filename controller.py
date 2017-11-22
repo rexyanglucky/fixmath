@@ -21,3 +21,14 @@ class Home(object):
         '''
         parames = {"title" : "fixmath", "mathJax" : False}
         return RENDER.home(parames)
+
+class Calculus(object):
+    '''
+    微积分
+    '''
+    def GET(self):
+        '''
+        返回视图
+        '''
+        parames = {"title" : "", "mathJax" : False}
+        return RENDER.the_first_volume(parames)
