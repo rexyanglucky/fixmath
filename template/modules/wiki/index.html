@@ -1,14 +1,38 @@
 $def with (parames)
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+<html lang="zh-cn">
+
+  $:render.layout.header(parames)
+
 <body>
-    
+
+  $:render.layout.navbar(parames)
+
+  <div class="container bs-docs-container">
+    <div class="row">
+      <div class="col-md-9 i">
+        <div class="input-group input-group-lg h">
+          <input type="text" class="form-control" placeholder="fixmath search"/>
+          <span class="input-group-btn">
+            <div class="btn btn-primary">@search</div>
+          </span>
+        </div>
+        <div class="k">
+          <a target="_blank" href="/zh-cn/wiki/index"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;索引</a>&emsp;&emsp;
+          <a href="/zh-cn/game/index"><span class="glyphicon glyphicon-fire"></span>&nbsp;&nbsp;Game</a>&emsp;&emsp;
+          <a href="/zh-cn/svg/index"><span class="glyphicon glyphicon-leaf"></span>&nbsp;&nbsp;Svg</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="navbar-fixed-bottom">
+      
+    $:render.layout.footer()
+
+    $:render.layout.copyright()
+
+  </div>
+
 </body>
 </html>

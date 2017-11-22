@@ -1,0 +1,1654 @@
+$def with (parames)
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+$:render.layout.header(parames)
+
+<body>
+
+    $:render.layout.navbar(parames)
+
+    <div class="container bs-docs-container">
+        <div class="row">
+            <div class="col-md-12" role="main">
+                <div class="bs-docs-section">
+                    <h2>
+                        <a class="anchorjs-link " aria-label="Anchor link for: glyphicons how to use" data-anchorjs-icon=""
+                            style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                        AsciiMath</h2>
+                    <p class="lead">fixmath遵循
+                        <a href="https://www.w3.org/" target="_blank">W3C</a> 标准，公式大部分基于AsciiMath的输入而非基于
+                        <a href="http://www.hostmath.com/" target="_blank">TeX and LaTeX</a>或
+                        <a href="https://www.w3.org/Math/" target="_blank">MathML</a>；</p>
+
+                    <p class="lead">
+                        图形遵循
+                        <a target="_blank">B-spline（贝塞尔）曲线</a>；
+                    </p>
+
+
+                    <div class="bs-example" data-example-id="btn-variants">
+                        <button type="button" class="btn btn-success">AsciiMath
+                            <span class="badge">10</span>
+                        </button>
+                        <a class="btn btn-info" href="http://www.hostmath.com/" target="_blank">TeX and LaTeX
+                            <span class="badge">0</span>
+                        </a>
+                        <a class="btn btn-warning" href="https://www.w3.org/Math/" target="_blank">MathML
+                            <span class="badge">0</span>
+                        </a>
+
+                    </div>
+
+
+
+
+                    <div class="bs-callout bs-callout-info">
+                        <h3>句法&emsp;&emsp;Syntax</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered">
+                                <caption>
+                                    <p class="lead">操作运算符</p>
+                                    <p>Operation symbols</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>+</td>
+                                        <td>`+`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>-</td>
+                                        <td>`-`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>*</td>
+                                        <td>`*`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>**</td>
+                                        <td>`**`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>***</td>
+                                        <td>`***`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>//</td>
+                                        <td>`//`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered">
+                                <caption>
+                                    <p class="lead">操作运算符</p>
+                                    <p>Operation symbols</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>\\</td>
+                                        <td>`\\`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>xx</td>
+                                        <td>`xx`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>-:</td>
+                                        <td>`-:`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>@</td>
+                                        <td>`@`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">11</th>
+                                        <td>o+</td>
+                                        <td>`o+`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">12</th>
+                                        <td>ox</td>
+                                        <td>`ox`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered">
+                                <caption>
+                                    <p class="lead">操作运算符</p>
+                                    <p>Operation symbols</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">13</th>
+                                        <td>o.</td>
+                                        <td>`o.`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">14</th>
+                                        <td>sum</td>
+                                        <td>`sum`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">15</th>
+                                        <td>prod</td>
+                                        <td>`prod`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">16</th>
+                                        <td>^^</td>
+                                        <td>`^^`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">17</th>
+                                        <td>^^^</td>
+                                        <td>`^^^`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">18</th>
+                                        <td>vv</td>
+                                        <td>`vv`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered">
+                                <caption>
+                                    <p class="lead">操作运算符</p>
+                                    <p>Operation symbols</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">19</th>
+                                        <td>vvv</td>
+                                        <td>`vvv`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">20</th>
+                                        <td>nn</td>
+                                        <td>`nn`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">21</th>
+                                        <td>nnn</td>
+                                        <td>`nnn`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">22</th>
+                                        <td>uu</td>
+                                        <td>`uu`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">23</th>
+                                        <td>uuu</td>
+                                        <td>`uuu`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">杂项符号</p>
+                                    <p>Miscellaneous symbols</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>int</td>
+                                        <td>`int`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>oint</td>
+                                        <td>`oint`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>del</td>
+                                        <td>`del`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>grad</td>
+                                        <td>`grad`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>+-</td>
+                                        <td>`+-`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>O/</td>
+                                        <td>`O/`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">杂项符号</p>
+                                    <p>Miscellaneous symbols</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>oo</td>
+                                        <td>`oo`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>aleph</td>
+                                        <td>`aleph`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>/_</td>
+                                        <td>`/_`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>:.</td>
+                                        <td>`:.`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">11</th>
+                                        <td>|...|</td>
+                                        <td>`|...|`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">12</th>
+                                        <td>|cdots|</td>
+                                        <td>`|cdots|`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">13</th>
+                                        <td>vdots</td>
+                                        <td>`vdots`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">杂项符号</p>
+                                    <p>Miscellaneous symbols</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">14</th>
+                                        <td>ddots</td>
+                                        <td>`ddots`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">15</th>
+                                        <td>|\ |</td>
+                                        <td>`|\ |`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">16</th>
+                                        <td>|quad|</td>
+                                        <td>`|quad|`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">17</th>
+                                        <td>diamond</td>
+                                        <td>`diamond`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">18</th>
+                                        <td>square</td>
+                                        <td>`square`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">19</th>
+                                        <td>|__</td>
+                                        <td>`|__`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">20</th>
+                                        <td>__|</td>
+                                        <td>`__|`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">杂项符号</p>
+                                    <p>Miscellaneous symbols</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <th scope="row">21</th>
+                                        <td>|~</td>
+                                        <td>`|~`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">22</th>
+                                        <td>~|</td>
+                                        <td>`~|`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">23</th>
+                                        <td>CC</td>
+                                        <td>`CC`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">24</th>
+                                        <td>NN</td>
+                                        <td>`NN`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">25</th>
+                                        <td>QQ</td>
+                                        <td>`QQ`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">26</th>
+                                        <td>RR</td>
+                                        <td>`RR`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">27</th>
+                                        <td>ZZ</td>
+                                        <td>`ZZ`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">关系运算符</p>
+                                    <p>Relation symbols</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>=</td>
+                                        <td>`=`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>!=</td>
+                                        <td>`!=`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>&lt;</td>
+                                        <td>`&lt;`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>&gt;</td>
+                                        <td>`&gt;`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>&lt;=</td>
+                                        <td>`&lt;=`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>&gt;=</td>
+                                        <td>`&gt;=`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>-&lt;</td>
+                                        <td>`-&lt;`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>&gt;-</td>
+                                        <td>`&gt;-`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">关系运算符</p>
+                                    <p>Relation symbols</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>in</td>
+                                        <td>`in`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>!in</td>
+                                        <td>`!in`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">11</th>
+                                        <td>sub</td>
+                                        <td>`sub`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">12</th>
+                                        <td>sup</td>
+                                        <td>`sup`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">13</th>
+                                        <td>sube</td>
+                                        <td>`sube`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">14</th>
+                                        <td>supe</td>
+                                        <td>`supe`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">关系运算符</p>
+                                    <p>Relation symbols</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">15</th>
+                                        <td>-=</td>
+                                        <td>`-=`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">16</th>
+                                        <td>~=</td>
+                                        <td>`~=`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">17</th>
+                                        <td>~~</td>
+                                        <td>`~~`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">18</th>
+                                        <td>prop</td>
+                                        <td>`prop`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">着重符号</p>
+                                    <p>Accents</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>hat x</td>
+                                        <td>`hat x`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>bar x</td>
+                                        <td>`bar x`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>ul x</td>
+                                        <td>`ul x`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>vec x</td>
+                                        <td>`vec x`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>dot x</td>
+                                        <td>`dot x`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>ddot x</td>
+                                        <td>`ddot x`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">希腊字母</p>
+                                    <p>Greek Letters</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>Type#</th>
+                                        <th>See</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>alpha</td>
+                                        <td>`alpha`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>beta</td>
+                                        <td>`beta`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>chi</td>
+                                        <td>`chi`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>delta</td>
+                                        <td>`delta`</td>
+                                        <td>Delta</td>
+                                        <td>`Delta`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>epsilon</td>
+                                        <td>`epsilon`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>varepsilon</td>
+                                        <td>`varepsilon`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">希腊字母</p>
+                                    <p>Greek Letters</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>Type#</th>
+                                        <th>See</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>eta</td>
+                                        <td>`eta`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>gamma</td>
+                                        <td>`gamma`</td>
+                                        <td>Gamma</td>
+                                        <td>`Gamma`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>iota</td>
+                                        <td>`iota`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>kappa</td>
+                                        <td>`kappa`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>lambda</td>
+                                        <td>`lambda`</td>
+                                        <td>Lambda</td>
+                                        <td>`Lambda`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mu</td>
+                                        <td>`mu`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>nu</td>
+                                        <td>`nu`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">希腊字母</p>
+                                    <p>Greek Letters</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>Type#</th>
+                                        <th>See</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td>omega</td>
+                                        <td>`omega`</td>
+                                        <td>Omega</td>
+                                        <td>`Omega`</td>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                    <tr>
+                                        <td>phi</td>
+                                        <td>`phi`</td>
+                                        <td>Phi</td>
+                                        <td>`Phi`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>varphi</td>
+                                        <td>`varphi`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pi</td>
+                                        <td>`pi`</td>
+                                        <td>Pi</td>
+                                        <td>`Pi`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>psi</td>
+                                        <td>`psi`</td>
+                                        <td>Psi</td>
+                                        <td>`Psi`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>rho</td>
+                                        <td>`rho`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>sigma</td>
+                                        <td>`sigma`</td>
+                                        <td>Sigma</td>
+                                        <td>`Sigma`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">希腊字母</p>
+                                    <p>Greek Letters</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>Type#</th>
+                                        <th>See</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>tau</td>
+                                        <td>`tau`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>theta</td>
+                                        <td>`theta`</td>
+                                        <td>Theta</td>
+                                        <td>`Theta`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>vartheta</td>
+                                        <td>`vartheta`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>upsilon</td>
+                                        <td>`upsilon`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>xi</td>
+                                        <td>`xi`</td>
+                                        <td>Xi</td>
+                                        <td>`Xi`</td>
+                                    </tr>
+                                    <tr>
+                                        <td>zeta</td>
+                                        <td>`zeta`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">逻辑运算符</p>
+                                    <p>Logical symbols</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>and</td>
+                                        <td>`and`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>or</td>
+                                        <td>`or`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>not</td>
+                                        <td>`not`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>=&gt;</td>
+                                        <td>`=&gt;`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>if</td>
+                                        <td>`if`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>iff</td>
+                                        <td>`iff`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">逻辑运算符</p>
+                                    <p>Logical symbols</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>AA</td>
+                                        <td>`AA`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>EE</td>
+                                        <td>`EE`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>_|_</td>
+                                        <td>`_|_`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>TT</td>
+                                        <td>`TT`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">11</th>
+                                        <td>|--</td>
+                                        <td>`|--`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">12</th>
+                                        <td>|==</td>
+                                        <td>`|==`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">标准函数一</p>
+                                    <p>Standard Functions</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>sin</td>
+                                        <td>`sin`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>sin</td>
+                                        <td>`sin`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>tan</td>
+                                        <td>`tan`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>csc</td>
+                                        <td>`csc`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>sec</td>
+                                        <td>`sec`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>cot</td>
+                                        <td>`cot`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">标准函数二</p>
+                                    <p>Standard Functions</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>sinh</td>
+                                        <td>`sinh`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>cosh</td>
+                                        <td>`cosh`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>tanh</td>
+                                        <td>`tanh`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>log</td>
+                                        <td>`log`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">11</th>
+                                        <td>ln</td>
+                                        <td>`ln`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">12</th>
+                                        <td>det</td>
+                                        <td>`det`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">标准函数三</p>
+                                    <p>Standard Functions</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">13</th>
+                                        <td>dim</td>
+                                        <td>`dim`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">14</th>
+                                        <td>lim</td>
+                                        <td>`lim`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">15</th>
+                                        <td>mod</td>
+                                        <td>`mod`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">16</th>
+                                        <td>gcd</td>
+                                        <td>`gcd`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">17</th>
+                                        <td>lcm</td>
+                                        <td>`lcm`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">18</th>
+                                        <td>min</td>
+                                        <td>`min`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">19</th>
+                                        <td>max</td>
+                                        <td>`max`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">分组括弧</p>
+                                    <p>Grouping brackets</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>(</td>
+                                        <td>`(`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>)</td>
+                                        <td>`)`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>[</td>
+                                        <td>`[`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>]</td>
+                                        <td>`]`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>{</td>
+                                        <td>`{`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>}</td>
+                                        <td>`}`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>(:</td>
+                                        <td>`(:`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>:)</td>
+                                        <td>`:)`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>{:</td>
+                                        <td>`{:`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>:}</td>
+                                        <td>`:}`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">矢量/箭符</p>
+                                    <p>Arrows</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>uarr</td>
+                                        <td>`uarr`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>darr</td>
+                                        <td>`darr`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>rarr</td>
+                                        <td>`rarr`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>-&gt;</td>
+                                        <td>`-&gt;`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>|-&gt;</td>
+                                        <td>`|-&gt;`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>larr</td>
+                                        <td>`larr`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>harr</td>
+                                        <td>`harr`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>rArr</td>
+                                        <td>`rArr`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>lArr</td>
+                                        <td>`lArr`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>hArr</td>
+                                        <td>`hArr`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-xs-6 col-md-4">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">字体命令</p>
+                                    <p>Font commands</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>bb "AaBbCc"</td>
+                                        <td>`bb "AaBbCc"`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>bbb "AaBbCc"</td>
+                                        <td>`bbb "AaBbCc"`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>cc "AaBbCc"</td>
+                                        <td>`cc "AaBbCc"`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>tt "AaBbCc"</td>
+                                        <td>`tt "AaBbCc"`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>fr "AaBbCc"</td>
+                                        <td>`fr "AaBbCc"`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>sf "AaBbCc"</td>
+                                        <td>`sf "AaBbCc"`</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-xs-6 col-md-12">
+                            <table class="table table-bordered" style="">
+                                <caption>
+                                    <p class="lead">特殊情况</p>
+                                    <p>Special Cases</p>
+                                </caption>
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Type</th>
+                                        <th>See</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th scope="row">矩阵</th>
+                                        <td>[[a,b],[c,d]]</td>
+                                        <td>`[[a,b],[c,d]]`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">列向量</th>
+                                        <td>((a,b),(c,d))</td>
+                                        <td>`((a,b),(c,d))`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">复杂的下标</th>
+                                        <td>lim_(x->oo)</td>
+                                        <td>`lim_(x->oo)`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">下标在前</th>
+                                        <td>int_0^1 f(x)dx</td>
+                                        <td>`int_0^1 f(x)dx`</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+
+                                        </th>
+                                        <td colspan="2">
+                                            Always try to surround the
+                                            <kbd>></kbd> and
+                                            <kbd>
+                                                <</kbd> characters with spaces so that the html parser does not confuse it with an
+                                                    opening or closing tag!
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Example
+                                        </th>
+                                        <td>
+                                            f(t)=(a_0)/2 + sum_(n=1)^ooa_ncos((npit)/L)+sum_(n=1)^oo b_nsin((npit)/L)
+                                        </td>
+                                        <td>
+                                            `f(t)=(a_0)/2 + sum_(n=1)^ooa_ncos((npit)/L)+sum_(n=1)^oo b_n\ sin((npit)/L)`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            ax^2+bx+c=0
+                                        </td>
+                                        <td>
+                                            `ax^2+bx+c=0`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            x^2+b/ax+c/a=0
+                                        </td>
+                                        <td>
+                                            `x^2+b/ax+c/a=0`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            x^2+b/ax+(b/(2a))^2-(b/(2a))^2+c/a=0
+                                        </td>
+                                        <td>
+                                            `x^2+b/ax+(b/(2a))^2-(b/(2a))^2+c/a=0`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            (x+b/(2a))^2=(b^2)/(4a^2)-c/a
+                                        </td>
+                                        <td>
+                                            `(x+b/(2a))^2=(b^2)/(4a^2)-c/a`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            x+b/(2a)=+-sqrt((b^2)/(4a^2)-c/a)
+                                        </td>
+                                        <td>
+                                            `x+b/(2a)=+-sqrt((b^2)/(4a^2)-c/a)`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            x_(1,2)=(-b+-sqrt(b^2-4ac))/(2a)
+                                        </td>
+                                        <td>
+                                            `x_(1,2)=(-b+-sqrt(b^2-4ac))/(2a)`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            x^2+y_1+z_12^34
+                                        </td>
+                                        <td>
+                                            `x^2+y_1+z_12^34`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            sin^-1(x)
+                                        </td>
+                                        <td>
+                                            `sin^-1(x)`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            d/dxf(x)=lim_(h->0)(f(x+h)-f(x))/h
+                                        </td>
+                                        <td>
+                                            `d/dxf(x)=lim_(h->0)(f(x+h)-f(x))/h`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            f(x)=sum_(n=0)^oo(f^((n))(a))/(n!)(x-a)^n
+                                        </td>
+                                        <td>
+                                            `f(x)=sum_(n=0)^oo(f^((n))(a))/(n!)(x-a)^n`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            [[a,b],[c,d]]((n),(k))
+                                        </td>
+                                        <td>
+                                            `[[a,b],[c,d]]((n),(k))`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            x/x={(1,if x!=0),(text{undefined},if x=0):}
+                                        </td>
+                                        <td>
+                                            `x/x={(1,if x!=0),(text{undefined},if x=0):}`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            在同一行显示分式的表示法
+                                        </th>
+                                        <td>
+                                            a//b
+                                        </td>
+                                        <td>
+                                            `a//b`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            括号的使用
+                                        </th>
+                                        <td>
+                                            (a/b)/(c/d)
+                                        </td>
+                                        <td>
+                                            `(a/b)/(c/d)`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            a/b/c/d
+                                        </td>
+                                        <td>
+                                            `a/b/c/d`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            ((a*b))/c
+                                        </td>
+                                        <td>
+                                            `((a*b))/c`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            sqrtsqrtroot3x
+                                        </td>
+                                        <td>
+                                            `sqrtsqrtroot3x`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            (:a,b:) and x lt y lt 1
+                                        </td>
+                                        <td>
+                                            `(:a,b:) and x lt y lt 1`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            尖括号及不可见括号
+                                        </th>
+                                        <td>
+                                            (:a,b:) and {:(x,y),(u,v):}
+                                        </td>
+                                        <td>
+                                            `(:a,b:) and {:(x,y),(u,v):}`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            (a,b]={x in RR : a
+                                            < x <=b } </td>
+                                                <td>
+                                                    `(a,b]={x in RR : a
+                                                    < x <=b }` </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            abc-123.45^-1.1
+                                        </td>
+                                        <td>
+                                            `abc-123.45^-1.1`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            hat(ab) bar(xy) ulA vec v dotx ddot y
+                                        </td>
+                                        <td>
+                                            `hat(ab) bar(xy) ulA vec v dotx ddot y`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            bb{AB3}.bbb(AB].cc(AB).fr{AB}.tt[AB].sf(AB)
+                                        </td>
+                                        <td>
+                                            `bb{AB3}.bbb(AB].cc(AB).fr{AB}.tt[AB].sf(AB)`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                        <td>
+                                            {(S_(11),...,S_(1n)),(vdots,ddots,vdots),(S_(m1),...,S_(mn))]
+                                        </td>
+                                        <td>
+                                            `{(S_(11),...,S_(1n)),(vdots,ddots,vdots),(S_(m1),...,S_(mn))]`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Chemistry
+                                        </th>
+                                        <td>
+                                            stackrel"加热"= or stackrel{Delta}{=}" "("or ":=)
+                                        </td>
+                                        <td>
+                                            `stackrel"加热"= or stackrel{Delta}{=}" "("or ":=)`
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            前置性的上/下标，要加上不可见的括号
+                                        </th>
+                                        <td>
+                                            {::}_(92)^(238)U
+                                        </td>
+                                        <td>
+                                            `{::}_(92)^(238)U`
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+
+                    <div class="bs-callout bs-callout-info">
+                        <h3>语法&emsp;&emsp;The Grammar</h3>
+                        <p class="lead">
+                            这是一个用来解析AsciiMath表达式语法定义，在如下给出的
+                            <a href="/zh-cn/wiki/Backus-Naur">巴科斯（Backus-Naur）范式</a>中，
+                            <kbd>::=</kbd>&ensp;左边的字母代表一个符号类别，它是右边列出的符号可能序列之一；竖线&ensp;
+                            <kbd>|</kbd>&ensp;交替区分；
+                        </p>
+                        <!--<p class="lead">
+                Here is a definition of the grammar used to parse AsciiMath expressions. In the Backus-Naur form given below, the letter on the left of the <kbd>::=</kbd> represents a category of symbols that could be one of the possible sequences of symbols listed on the right. The vertical bar <kbd>|</kbd> separates the alternatives.
+              </p>-->
+                    </div>
+                    <figure class="highlight">
+                        <pre><code class="language-html" data-lang="html">
+        <h4><span class="nt">c</span> <span class="s">::=</span> [A-z] <span class="na">|</span> numbers <span class="na">|</span> greek letters <span class="na">|</span> other constant symbols (see below)
+        <span class="nt">u</span> <span class="s">::=</span> 'sqrt' <span class="na">|</span> 'text' <span class="na">|</span> 'bb' <span class="na">|</span>     other unary symbols for font commands
+        <span class="nt">b</span> <span class="s">::=</span> 'frac' <span class="na">|</span> 'root' <span class="na">|</span> 'stackrel' binary symbols
+        <span class="nt">l</span> <span class="s">::=</span> ( <span class="na">|</span> [ <span class="na">|</span> { <span class="na">|</span> (: <span class="na">|</span> {:          left brackets
+        <span class="nt">r</span> <span class="s">::=</span> ) <span class="na">|</span> ] <span class="na">|</span> } <span class="na">|</span> :) <span class="na">|</span> :}          right brackets
+        <span class="nt">S</span> <span class="s">::=</span> c <span class="na">|</span> lEr <span class="na">|</span> uS <span class="na">|</span> bSS <span class="na">|</span> "any"   simple expression
+        <span class="nt">E</span> <span class="s">::=</span> SE <span class="na">|</span> S/S <span class="na">|</span> S_S <span class="na">|</span> S^S <span class="na">|</span> S_S^S expression (fraction, sub-, super-, subsuperscript)
+        </h4>
+        </code>
+        </pre>
+                    </figure>
+
+                    <div class="bs-callout bs-callout-danger">
+                        <h3>End</h3>
+                        <p>
+                            Create By Mr.Lu 2017-5-13 22:36
+                        </p>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    $:render.layout.footer()
+    
+    $:render.layout.copyright()
+
+</body>
+
+</html>

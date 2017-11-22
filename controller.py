@@ -162,6 +162,7 @@ class GameIndex(object):
         if url in ['', '/']:
             pass
         parames = model.BasePara()
+        parames.mathjax = False
         parames.title = "Game"
         parames.keyword = ""
         parames.description = ""
@@ -180,6 +181,7 @@ class SvgIndex(object):
         if url in ['', '/']:
             pass
         parames = model.BasePara()
+        parames.mathjax = False
         parames.title = "SVG"
         parames.keyword = ""
         parames.description = ""
@@ -198,6 +200,7 @@ class WikiIndex(object):
         if url in ['', '/']:
             pass
         parames = model.BasePara()
+        parames.mathjax = False
         parames.title = "WIKI"
         parames.keyword = ""
         parames.description = ""
@@ -216,9 +219,48 @@ class ProfileIndex(object):
         if url in ['', '/']:
             pass
         parames = model.BasePara()
+        parames.mathjax = False
         parames.title = "用户中心"
         parames.keyword = ""
         parames.description = "用户中心"
         parames.currentmodule = fixmathproperty.CurrentPage().profile
         parames.bannerstylename = fixmathproperty.CurrentStyleName().profile
         return RENDER.modules.profile.index(parames)
+
+class DonateIndex(object):
+    '''
+    捐助中心
+    '''
+    def GET(self, url):
+        '''
+        返回视图
+        '''
+        if url in ['', '/']:
+            pass
+        parames = model.BasePara()
+        parames.mathjax = False
+        parames.title = "捐助中心"
+        parames.keyword = ""
+        parames.description = ""
+        parames.currentmodule = fixmathproperty.CurrentPage().home
+        parames.bannerstylename = fixmathproperty.CurrentStyleName().home
+        return RENDER.donate(parames)
+
+class AboutIndex(object):
+    '''
+    关于我们
+    '''
+    def GET(self, url):
+        '''
+        返回视图
+        '''
+        if url in ['', '/']:
+            pass
+        parames = model.BasePara()
+        parames.mathjax = False
+        parames.title = "关于我们"
+        parames.keyword = ""
+        parames.description = ""
+        parames.currentmodule = fixmathproperty.CurrentPage().home
+        parames.bannerstylename = fixmathproperty.CurrentStyleName().home
+        return RENDER.about(parames)

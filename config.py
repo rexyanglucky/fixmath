@@ -27,6 +27,7 @@ FIX_MATH_CONFIG = web.storage(
     svg_url="/zh-cn/svg/",                                          #svg
     wiki_url="/zh-cn/wiki/",                                        #wiki
     profile_url="/zh-cn/profile/",                                  #用户中心
+    other_url="/zh-cn/",                                            #其它
     favicon_url="/favicon.ico",                                     #fixmath图标位置
     init_day="2017/11/21",                                          #fixmath初始化day
     init_time="19:27:25",                                           #fixmath初始化time
@@ -57,5 +58,7 @@ URLS = (
     FIX_MATH_CONFIG.game_url + 'index(.*)', 'controller.GameIndex',
     FIX_MATH_CONFIG.svg_url + 'index(.*)', 'controller.SvgIndex',
     FIX_MATH_CONFIG.wiki_url + 'index(.*)', 'controller.WikiIndex',
-    FIX_MATH_CONFIG.profile_url + 'index(.*)', 'controller.ProfileIndex'
+    FIX_MATH_CONFIG.profile_url + 'index(.*)', 'controller.ProfileIndex',
+    FIX_MATH_CONFIG.other_url + 'donate(.*)', 'controller.DonateIndex',
+    FIX_MATH_CONFIG.other_url + 'about(.*)', 'controller.AboutIndex'
 )

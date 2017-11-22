@@ -1,0 +1,154 @@
+$def with (parames)
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+$:render.layout.header(parames)
+
+<body>
+
+    $:render.layout.navbar(parames)
+
+
+    <div class="container bs-docs-container">
+        <div class="row">
+            <div class="col-md-12" role="main">
+                <div class="bs-docs-section">
+                    <h2 class="text-left page-header">
+                        捐助我们
+                    </h2>
+                    <p class="lead d">Donate to the Fixmath</p>
+
+                    <h2 class="text-left page-header">
+                        fixmath是做什么的?
+                    </h2>
+                    <p class="lead d">What does the Fixmath do?</p>
+                    <div class="bs-callout bs-callout-info">
+                        <p class="lead">
+                            §0&emsp;fixmath的使命是将部分复杂的数学原理转化为计算机方面的应用
+                        </p>
+                        <p class="lead">
+                            §1&emsp;编辑与应用相关的数学原理文档
+                        </p>
+                        <p class="lead">
+                            §2&emsp;对微积分（Calculus）内容进行python的相关实现并GitHub仓储
+                        </p>
+                        <p class="lead">
+                            §3&emsp;对代数（Algebra）内容进行python的相关实现并GitHub仓储
+                        </p>
+                        <p class="lead">
+                            §4&emsp;对几何（Analytic Geometry）内容进行python的相关实现并GitHub仓储
+                        </p>
+                        <p class="lead">
+                            §5&emsp;对应用的相关示例，进行B-spline（贝塞尔）曲线呈现并GitHub仓储
+                        </p>
+                        <p class="lead">
+                            §6&emsp;将更多的数学原理移至计算服务上......
+                        </p>
+                    </div>
+
+                    <h2 class="text-left page-header">
+                        怎么捐款?
+                    </h2>
+                    <p class="lead d">How can I donate?</p>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-6 col-md-12">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th scope="row">微信
+                                <br/>
+                                <br/>weChat</th>
+
+                            <td>
+                                <img src="$config.static_url/img/weChat.png" style="width:307px; height:305px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">支付宝
+                                <br/>
+                                <br/>aliPay</th>
+
+                            <td>
+                                <img src="$config.static_url/img/aliPay.png" style="width:307px; height:305px;" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <h2 class="text-left page-header">
+                    捐助者
+                </h2>
+                <p class="lead d">Donors</p>
+            </div>
+
+
+        </div>
+        <div class="row">
+
+            <div class="col-xs-6 col-md-12">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th scope="row">王**</th>
+
+                            <td>
+                                ￥5.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">李**</th>
+
+                            <td>
+                                ￥0.01
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">沈**</th>
+
+                            <td>
+                                ￥0.01
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>郭**</th>
+                            <td>￥0.50</td>
+                        </tr>
+                        <tr>
+                            <th>李**</th>
+                            <td>￥0.01</td>
+                        </tr>
+                        <tr>
+                            <th>代**</th>
+                            <td>￥1.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    $:render.layout.footer()
+    
+    $:render.layout.copyright()
+
+</body>
+
+</html>

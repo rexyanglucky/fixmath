@@ -1,14 +1,489 @@
 $def with (parames)
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+<html lang="zh-cn">
+
+$:render.layout.header(parames)
+
 <body>
+
+    $:render.layout.navbar(parames)
     
+    $:render.layout.banner(parames)
+
+    <div class="container bs-docs-container">
+        <div class="row">
+            <div class="col-md-12" role="main">
+                <div class="bs-docs-section">
+
+                    <div class="bs-callout bs-callout-info">
+                        <h3 class="page-header c">第一章&emsp;&emsp;矢量与坐标</h3>
+                        <p class="lead d">
+                            Chapter 1&emsp;&nbsp;Vector and coordinate
+                        </p>
+                        <p class="lead">
+                            解析几何的基本思想是用代数的方法来研究几何，为了把代数运算引到几何中来，最根本的做法 就是设法把空间的几何结构有系统的代数化，数量化；
+                        </p>
+                        <p class="lead">
+                            因此在这里我们首先在空间引进矢量以及它的运算，并且通过矢量来建立坐标系，这是本章要讨论的主要课题，它也是解析几何的基础； 利用矢量，有时可使得某些几何问题更简捷地得到解决；
+                        </p>
+                        <p class="lead">
+                            矢量在其他一些学科，例如力学，物理学和工程技术中也是解决问题的有力工具；
+                        </p>
+                    </div>
+                    <div class="bs-example bs-example-type" data-example-id="striped-table">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;
+                                            <a href="/zh-cn/geometry/conception-of-vector">矢量的概念</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="/zh-cn/geometry/conception-of-vector">the Conception of vector</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;
+                                            <a href="/zh-cn/geometry/addition-of-vectors">矢量的加法</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="/zh-cn/geometry/addition-of-vectors">addition of vectors</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;
+                                            <a href="/zh-cn/geometry/a-vector-multiplied-by-a-scalar-quantity">数量乘矢量</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <a href="/zh-cn/geometry/a-vector-multiplied-by-a-scalar-quantity">A vector multiplied by a scalar quantity</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;矢量的线性关系与矢量的分解</td>
+                                    <td class="text-right">
+                                        <a href="">the vector of a linear relationship and resolution of vector</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§5&emsp;标架与坐标</td>
+                                    <td class="text-right">
+                                        <a href="">frame and coordinates</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§6&emsp;矢量在轴上的射影</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§7&emsp;两矢量的数性积</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§8&emsp;两矢量的矢性积</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§9&emsp;三矢量的混和积</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§10&emsp;三矢量的双重矢性积</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§11&emsp;结束语</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="bs-callout bs-callout-info">
+                        <h3>第二章&emsp;&emsp;轨迹与方程</h3>
+                    </div>
+                    <div class="bs-example bs-example-type" data-example-id="striped-table">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;平面曲线的方程</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;曲面的方程</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;母线平行于坐标轴的柱面方程</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;空间曲线的方程</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§5&emsp;结束语</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-info">
+                        <h3>第三章&emsp;&emsp;平面与空间直线</h3>
+                    </div>
+                    <div class="bs-example bs-example-type" data-example-id="striped-table">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;平面的方程</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;平面与点的相关位置</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;两平面的相关位置</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;空间直线的方程</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§5&emsp;直线与平面的相关位置</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§6&emsp;空间两直线的相关位置</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§7&emsp;空间直线与点的相关位置</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§8&emsp;平面束</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§9&emsp;结束语</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-info">
+                        <h3>第四章&emsp;&emsp;柱面、锥面、旋转曲面与二次曲面</h3>
+                    </div>
+                    <div class="bs-example bs-example-type" data-example-id="striped-table">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;柱面</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;锥面</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;旋转曲面</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;椭球面</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§5&emsp;双曲面</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§6&emsp;抛物面</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§7&emsp;单叶双曲面与双曲抛物面的直母线</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§8&emsp;结束语</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-info">
+                        <h3>第五章&emsp;&emsp;二次曲线的一般理论</h3>
+                    </div>
+                    <div class="bs-example bs-example-type" data-example-id="striped-table">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;二次曲线与直线的相关位置</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;二次曲线的渐近方向、中心、渐近线</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;二次曲线的切线</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;二次曲线的直径</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§5&emsp;二次曲线的主直径与主方向</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§6&emsp;二次曲线方程的化简与分类</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§7&emsp;应用不变量化简二次曲线的方程</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§8&emsp;结束语</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-info">
+                        <h3>第六章&emsp;&emsp;二次曲面的一般理论</h3>
+                    </div>
+                    <div class="bs-example bs-example-type" data-example-id="striped-table">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;二次曲面与直线的相关位置</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;二次曲面的渐近方向与中心</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;二次曲面的切线与切平面</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;二次曲面的径面与奇向</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§5&emsp;二次曲线的主径面与主方向、特征方程与特征根</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§6&emsp;二次曲面方程的化简与分类</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§7&emsp;应用不变量化简二次曲线的方程</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§8&emsp;结束语</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-info">
+                        <h3>附录&emsp;&emsp;矩阵与行列式</h3>
+                    </div>
+                    <div class="bs-example bs-example-type" data-example-id="striped-table">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§1&emsp;矩阵与行列式的定义</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§2&emsp;行列式的性质</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§3&emsp;线性方程组</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <b>§4&emsp;矩阵的乘法</td>
+                                    <td>
+                                        <a href=""></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bs-callout bs-callout-danger">
+                        <h3>End</h3>
+                        <p>
+                            Create By Mr.Lu 2017-5-17 23:24
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    $:render.layout.footer()
+    
+    $:render.layout.copyright()
+
 </body>
+
 </html>
