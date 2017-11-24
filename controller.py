@@ -200,13 +200,32 @@ class WikiIndex(object):
         if url in ['', '/']:
             pass
         parames = model.BasePara()
-        parames.mathjax = False
+        parames.mathjax = True
         parames.title = "WIKI"
         parames.keyword = ""
         parames.description = ""
         parames.currentmodule = fixmathproperty.CurrentPage().wiki
         parames.bannerstylename = fixmathproperty.CurrentStyleName().wiki
         return RENDER.modules.wiki.index(parames)
+
+class BackusNaur(object):
+    '''
+    巴科斯（Backus-Naur）范式
+    '''
+    def GET(self, url):
+        '''
+        返回视图
+        '''
+        if url in ['', '/']:
+            pass
+        parames = model.BasePara()
+        parames.mathjax = False
+        parames.title = "巴科斯（Backus-Naur）范式"
+        parames.keyword = ""
+        parames.description = ""
+        parames.currentmodule = fixmathproperty.CurrentPage().wiki
+        parames.bannerstylename = fixmathproperty.CurrentStyleName().wiki
+        return RENDER.modules.wiki.backus_naur(parames)
 
 class ProfileIndex(object):
     '''

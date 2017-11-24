@@ -58,7 +58,8 @@ URLS = (
     FIX_MATH_CONFIG.game_url + 'index(.*)', 'controller.GameIndex',
     FIX_MATH_CONFIG.svg_url + 'index(.*)', 'controller.SvgIndex',
     FIX_MATH_CONFIG.wiki_url + 'index(.*)', 'controller.WikiIndex',
+    FIX_MATH_CONFIG.wiki_url + 'Backus-Naur(.*)', 'controller.BackusNaur',
     FIX_MATH_CONFIG.profile_url + 'index(.*)', 'controller.ProfileIndex',
     FIX_MATH_CONFIG.other_url + 'donate(.*)', 'controller.DonateIndex',
-    FIX_MATH_CONFIG.other_url + 'about(.*)', 'controller.AboutIndex'
+    FIX_MATH_CONFIG.other_url + 'about(.*)', 'controller.AboutIndex',
 )

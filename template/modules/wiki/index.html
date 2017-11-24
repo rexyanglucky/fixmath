@@ -2,7 +2,7 @@ $def with (parames)
 <!DOCTYPE html>
 <html lang="zh-cn">
 
-  $:render.layout.header(parames)
+$:render.layout.header(parames)
 
 <body>
 
@@ -10,29 +10,131 @@ $def with (parames)
 
   <div class="container bs-docs-container">
     <div class="row">
-      <div class="col-md-9 i">
-        <div class="input-group input-group-lg h">
-          <input type="text" class="form-control" placeholder="fixmath search"/>
-          <span class="input-group-btn">
-            <div class="btn btn-primary">@search</div>
-          </span>
-        </div>
-        <div class="k">
-          <a target="_blank" href="/zh-cn/wiki/index"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;索引</a>&emsp;&emsp;
-          <a href="/zh-cn/game/index"><span class="glyphicon glyphicon-fire"></span>&nbsp;&nbsp;Game</a>&emsp;&emsp;
-          <a href="/zh-cn/svg/index"><span class="glyphicon glyphicon-leaf"></span>&nbsp;&nbsp;Svg</a>
+      <div class="col-md-12" role="main">
+
+
+        <div class="bs-docs-section">
+
+          <h2 class="text-left">
+            Overview
+          </h2>
+
+          <div class="bs-callout bs-callout-danger">
+            <h3>fixmath</h3>
+            <p class="lead">
+              <a href="/zh-cn/source/index" target="_blank">AsciiMath</a>&emsp;
+              <a href="http://www.hostmath.com/" target="_blank">TeX and LaTeX</a>&emsp;
+              <a href="https://www.w3.org/TR/MathML3/" target="_blank">MathML</a>
+            </p>
+          </div>
+
+
+
+          <div class="bs-callout bs-callout-info">
+            <h3 class="page-header c">分支</h3>
+            <p class="lead d">
+              branch
+            </p>
+            <p class="lead">
+              <a href="/zh-cn/calculus/the-first-volume">微积分</a>&emsp;
+              <a href="/zh-cn/algebra/index">代数</a>&emsp;
+              <a href="/zh-cn/geometry/index">几何</a>
+            </p>
+            <div class="progress">
+              <div title="calculus占比：40%" class="progress-bar progress-bar-success" style="width: 40%">
+                <span class="sr-only">40% Complete (success)</span>40%
+              </div>
+              <div title="algebra占比：20%" class="progress-bar progress-bar-warning" style="width: 20%">
+                <span class="sr-only">20% Complete (warning)</span>20%
+              </div>
+              <div title="geometry占比：20%" class="progress-bar" style="width: 20%">
+                <span class="sr-only">20% Complete (danger)</span>20%
+              </div>
+            </div>
+          </div>
+
+          <div class="bs-callout bs-callout-info">
+            <h3 class="page-header c">矢量图形</h3>
+            <p class="lead d">
+              Scalable Vector Graphics
+            </p>
+            <p class="lead">
+              <a href="/zh-cn/svg/index">Index</a>&emsp;
+            </p>
+          </div>
+
+          <div class="bs-callout bs-callout-info">
+            <h3 class="page-header c">专有名词</h3>
+            <p class="lead d">
+              Proper Noun
+            </p>
+            <p class="lead">
+              <a href="/zh-cn/wiki/Backus-Naur">巴科斯（Backus-Naur）范式</a>&emsp;
+              <a href="/zh-cn/wiki/Calculus">微积分</a>&emsp;
+              <a href="/zh-cn/wiki/Differentiation">微分</a>&emsp;
+              <a href="/zh-cn/wiki/Integration">积分</a>&emsp;
+              <a href="/zh-cn/wiki/regular-expression">Regular Expression</a>&emsp;
+              <a>贝塞尔曲线（B-spline）</a>&emsp;
+            </p>
+          </div>
+
+          <div class="bs-callout bs-callout-info">
+            <h3 class="page-header c">杂项</h3>
+            <p class="lead d">
+              Other
+            </p>
+            <p class="lead">
+
+            </p>
+            <p class="lead">
+              <a href="https://www.microsoft.com/expression/chs/#design" target="_blank">Expression Design</a>&emsp;
+              <a href="https://atom.io/" target="_blank">Atom</a> |
+              <a href="https://code.visualstudio.com/Download" target="_blank">VS Code</a>
+              &emsp;
+              <a href="https://en.m.wikipedia.org/wiki/Pi" target="_blank">`pi`</a>
+              &emsp;
+              <a href="https://en.wikipedia.org/wiki/Help:Displaying_a_formula" target="_blank">Formula</a>
+              &emsp;
+              <a href="http://webpy.org/" target="_blank">Web.py</a>
+              &emsp;
+              <a href="https://www.nginx.com/" target="_blank">Nginx</a>
+              &emsp;
+              <a href="https://www.mysql.com/" target="_blank">Mysql</a>
+              &emsp;
+              <a href="https://www.w3.org/" target="_blank">W3C</a>
+              &emsp;
+              <a href="https://certbot.eff.org/" target="_blank">Let's Encrypt</a>
+              &emsp;
+              <a href="https://www.linux.org/" target="_blank">Linux</a>
+              &emsp;
+              <a href="http://www.britishmuseum.org/" target="_blank">大英博物馆</a>
+              &emsp;
+              <a href="http://www.nlc.cn/" target="_blank">国家图书馆</a>
+              &emsp;
+              <a href="http://www.pep.com.cn/" target="_blank">人民教育出版社</a>
+              &emsp;
+              <a href="http://www.moe.gov.cn/" target="_blank">中国教育部</a>
+            </p>
+          </div>
+
+
+          <div class="bs-callout bs-callout-danger">
+            <h3>End</h3>
+            <p>
+              Create By Mr.Lu 2017-5-14 21:22
+            </p>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
-  
-  <div class="navbar-fixed-bottom">
-      
-    $:render.layout.footer()
 
-    $:render.layout.copyright()
 
-  </div>
+  $:render.layout.footer()
+    
+  $:render.layout.copyright()
 
 </body>
+
 </html>
